@@ -1,6 +1,11 @@
 // src/App.js
 import React from 'react';
 import Header from './components/Header';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -8,33 +13,19 @@ function App() {
     <div className="App">
       <Header />
       
-      {/* Introduction Section */}
-      <section id="introduction">
-        <h2>Introduction</h2>
-        <p>Your introduction content here.</p>
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>Master's student in Computer Science at Technische Universität Darmstadt. Experienced in developing web applications. Possesses a strong foundation in machine learning and deep learning. Dedicated to continuous learning and contributing effectively to software development teams.</p>
       </section>
       
-      {/* Projects Section */}
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>Your projects content here.</p>
-      </section>
+      <Education />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Contact />
       
-      {/* Contact Section */}
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Your contact content here.</p>
-      </section>
-      
-      {/* Hobbies Section */}
-      <section id="hobbies">
-        <h2>Hobbies</h2>
-        <p>Your hobbies content here.</p>
-      </section>
-      
-      {/* Footer */}
       <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Yibo Wang. All rights reserved.</p>
       </footer>
     </div>
   );

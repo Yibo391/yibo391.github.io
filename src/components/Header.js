@@ -1,20 +1,33 @@
 // src/components/Header.js
 import React from 'react';
-import { Link } from 'react-scroll';
+import Typewriter from './Typewriter';
 import './Header.css';
 
-const Header = () => {
+function Header() {
   return (
     <header className="header">
-      <h1 className="title">Yibo Wang</h1>
+      <div className="title-container">
+        <Typewriter text="Yibo Wang" speed={150} />
+        <div className="subtitle">
+          <Typewriter 
+            text="Full Stack Developer & Machine Learning" 
+            speed={50} 
+          />
+        </div>
+      </div>
       <nav className="nav">
-        <Link to="introduction" smooth={true} duration={500}>Introduction</Link>
-        <Link to="projects" smooth={true} duration={500}>Projects</Link>
-        <Link to="contact" smooth={true} duration={500}>Contact</Link>
-        <Link to="hobbies" smooth={true} duration={500}>Hobbies</Link>
+        {['summary', 'education', 'experience', 'projects', 'skills', 'contact'].map((item) => (
+          <a 
+            href={`#${item}`}
+            key={item}
+            className="nav-item"
+          >
+            {item.charAt(0).toUpperCase() + item.slice(1)}
+          </a>
+        ))}
       </nav>
     </header>
   );
-};
+}
 
 export default Header;
