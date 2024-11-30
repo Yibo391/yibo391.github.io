@@ -1,11 +1,16 @@
 /* src/App.css */
 
 :root {
-  --primary-color: #00ff9d;
-  --bg-color: #1a1a1a;
-  --text-color: #f5f5f5;
-  --section-bg: #2a2a2a;
-  --card-bg: #333333;
+  --primary-color: #00ffa3;
+  --secondary-color: #845ef7;
+  --bg-color: #0a0b0e;
+  --text-color: #e2e8f0;
+  --section-bg: #111318;
+  --card-bg: #1a1d25;
+  --gradient-1: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
 }
 
 body {
