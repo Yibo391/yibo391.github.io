@@ -12,11 +12,11 @@ const Education = ({ education }) => {
       <div className="space-y-6">
         {education.map((edu, index) => (
           <div key={index} className="flex gap-6 items-start">
-            <div className="w-16 h-16 flex-shrink-0 bg-gray-100">
+            <div className="w-16 h-16 flex-shrink-0 bg-gray-50 rounded-lg p-2 hover:bg-gray-100 transition-colors">
               <img 
-                src={edu.logo}  // Use the imported image directly
+                src={edu.logo}
                 alt={`${edu.institution} logo`}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain hover:scale-110 transition-transform"
                 onError={(e) => handleImageError(e, edu.institution)}
               />
             </div>

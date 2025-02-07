@@ -2,12 +2,18 @@ import React from 'react';
 
 const Header = ({ name, contact }) => {
   return (
-    <header className="mb-8">
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">{name}</h1>
-      <div className="text-gray-600 space-y-1">
-        <p>{contact.location}</p>
-        <p>{contact.phone}</p>
-        <p>{contact.email}</p>
+    <header>
+      <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">{name}</h1>
+      <div className="text-lg text-gray-600 dark:text-gray-300 space-y-2">
+        <p className="flex items-center gap-2">
+          <span>📍</span> {contact.location}
+        </p>
+        <p className="flex items-center gap-2">
+          <span>📱</span> {contact.phone}
+        </p>
+        <p className="flex items-center gap-2">
+          <span>📧</span> {contact.email}
+        </p>
       </div>
     </header>
   );

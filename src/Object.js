@@ -42,6 +42,7 @@ const resume = {
       {
         title: "AI Editor | Academic Research Initiative",
         icon: "🤖",  // Add AI icon
+        link: "https://livecowrite.ukp.informatik.tu-darmstadt.de/",  // Verify this link is correct
         details: [
           "Architected real-time collaborative editing platform with React/TypeScript",
           "Established RESTful API communication layer for seamless data flow",
