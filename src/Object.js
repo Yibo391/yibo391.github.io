@@ -1,3 +1,6 @@
+import TULogo from './imgs/tu darmstadt.png'
+import LNULogo from './imgs/LNU.png'
+
 const resume = {
     name: "Yibo Wang",
     contact: {
@@ -8,6 +11,7 @@ const resume = {
     education: [
       {
         institution: "Technische Universität Darmstadt",
+        logo: TULogo,  // Use imported image
         period: "October 2023 – Present",
         degree: "Master of Science in Computer Science",
         mainCourses: [
@@ -20,6 +24,7 @@ const resume = {
       },
       {
         institution: "Linnaeus University",
+        logo: LNULogo,  // Use imported image
         location: "Växjö, Sweden",
         period: "August 2020 – August 2023",
         degree: "Bachelor of Science in Software Technology",
@@ -36,6 +41,7 @@ const resume = {
     projects: [
       {
         title: "AI Editor | Academic Research Initiative",
+        icon: "🤖",  // Add AI icon
         details: [
           "Architected real-time collaborative editing platform with React/TypeScript",
           "Established RESTful API communication layer for seamless data flow",
@@ -44,6 +50,7 @@ const resume = {
       },
       {
         title: "Smart Chat Bot | Full-Stack Development",
+        icon: "💬",  // Add chat icon
         details: [
           "Engineered full-stack conversational interface with React.js/Node.js",
           "Customized local LLM integration using Ollama framework",
@@ -52,6 +59,7 @@ const resume = {
       },
       {
         title: "Cloud-Disk | Full-Stack Development",
+        icon: "☁️",  // Add cloud icon
         details: [
           "Developed cloud-native storage solution with Spring Boot/Vue 3",
           "Engineered modern authentication protocols with token validation"
