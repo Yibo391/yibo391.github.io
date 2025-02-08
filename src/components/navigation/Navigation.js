@@ -1,8 +1,6 @@
 import React from 'react';
-import { useTheme } from '../../context/ThemeContext';
 
 const Navigation = ({ setActiveSection }) => {
-  const { isDark, setIsDark } = useTheme();
   const navItems = [
     { id: 'profile', icon: '👤', label: 'Profile' },
     { id: 'education', icon: '🎓', label: 'Education' },
@@ -13,24 +11,6 @@ const Navigation = ({ setActiveSection }) => {
 
   return (
     <nav className="w-20 bg-white dark:bg-gray-800 h-screen fixed left-0 top-0 flex flex-col items-center pt-6 shadow-lg">
-      <div className="mb-8 relative">
-        <button
-          onClick={() => setIsDark(!isDark)}
-          className="w-12 h-6 rounded-full bg-gray-200 dark:bg-gray-700 relative transition-colors duration-300"
-          aria-label="Toggle theme"
-        >
-          <span 
-            className={`
-              absolute w-5 h-5 rounded-full top-0.5 
-              transition-all duration-300 ease-in-out
-              ${isDark 
-                ? 'translate-x-6 bg-blue-500' 
-                : 'translate-x-1 bg-white shadow-md'
-              }
-            `}
-          />
-        </button>
-      </div>
       {navItems.map((item) => (
         <button
           key={item.id}

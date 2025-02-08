@@ -9,7 +9,7 @@ import Navigation from './components/navigation/Navigation';
 import { resume } from './Object';
 
 const App = () => {
-  const { isDark } = useTheme();
+  const { isDark, setIsDark } = useTheme();
   const sectionRefs = {
     profile: useRef(null),
     education: useRef(null),
@@ -34,7 +34,21 @@ const App = () => {
   return (
     <div className="flex bg-slate-50 dark:bg-gray-900 min-h-screen">
       <Navigation activeSection="" setActiveSection={scrollToSection} />
-      <main className="ml-20 flex-1 p-8 md:p-12">
+      <main className="ml-20 flex-1 p-8 md:p-12 relative">
+      <div className="fixed right-8 top-8 z-50">
+        <button
+          onClick={() => setIsDark(!isDark)}
+          className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center
+            hover:bg-blue-500 hover:text-white transition-all duration-300 ease-in-out
+            shadow-sm text-gray-700 dark:bg-gray-800 dark:text-white"
+          aria-label="Toggle theme"
+        >
+          <span className="text-xl">
+            {isDark ? '🌙' : '☀️'}
+          </span>
+        </button>
+      </div>
+
         <div className="container mx-auto max-w-4xl space-y-16">
           <div ref={sectionRefs.profile} className="bg-white dark:bg-gray-800 dark:text-white rounded-xl shadow-sm p-8">
             <Header name={resume.name} contact={resume.contact} />
