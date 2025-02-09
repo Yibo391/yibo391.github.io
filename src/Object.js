@@ -6,8 +6,9 @@ const resume = {
     contact: {
       location: "Frankfurt, Germany",
       phone: "017685939823",
-      email: "wyibo00@outlook.com"
+      email: "wyibo00@outlook.com",
     },
+    summary: "Computer Science master's student at TU Darmstadt, specializing in Natural Language Processing and Machine Learning. Experienced in full-stack development with a strong foundation in AI/ML technologies. Passionate about creating innovative solutions and contributing to cutting-edge research in NLP. Proven track record of collaborative project success and technical leadership.",
     education: [
       {
         institution: "Technische Universität Darmstadt",
@@ -51,7 +52,8 @@ const resume = {
       },
       {
         title: "Smart Chat Bot | Full-Stack Development",
-        icon: "💬",  // Add chat icon
+        icon: "💬", 
+        link:"https://github.com/Yibo391/SmartChatBot?tab=readme-ov-file",
         details: [
           "Engineered full-stack conversational interface with React.js/Node.js",
           "Customized local LLM integration using Ollama framework",
@@ -88,7 +90,33 @@ const resume = {
       other: ["Responsive Design", "CI/CD", "RESTful API", "AWS EC2", "AWS Lambda", "AWS S3"],
       toolsAndTechnologies: ["Git", "Nginx", "Postman", "scikit-learn", "Jira", "Trello"]
     },
-    languages: ["Chinese", "English"]
+    languages: ["Chinese", "English"],
+    hobbies: [
+      {
+        category: "Sports",
+        icon: "⚽",
+        items: ["Padel", "PingPong", "Badminton"],
+        description: "Weekly badminton games with friends."
+      },
+      {
+        category: "Technology",
+        icon: "💻",
+        items: ["Building PCs", "Medium blogs", "Exploring new tech"],
+        description: "Active contributor to write technical articles."
+      },
+      {
+        category: "Creative",
+        icon: "📸",
+        items: ["TikTok video editing", "Gaming Clips"],
+        description: "Amateur editor focusing on vlog and gaming clips."
+      },
+      {
+        category: "Gaming",
+        icon: "🎮",
+        items: ["Valorant", "Counter-Strike 2"],
+        description: "Faceit Lv10 Player in CS, Radiant in Valorant."
+      }
+    ]
   };
   
   console.log(resume);

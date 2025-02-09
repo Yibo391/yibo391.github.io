@@ -6,6 +6,7 @@ import Experience from './components/experience/Experience';
 import Projects from './components/projects/Projects';
 import Skills from './components/skills/Skills';
 import Navigation from './components/navigation/Navigation';
+import Hobbies from './components/hobbies/Hobbies';
 import { resume } from './Object';
 
 const App = () => {
@@ -14,8 +15,9 @@ const App = () => {
     profile: useRef(null),
     education: useRef(null),
     experience: useRef(null),
-    projects: useRef(null),   // Add missing ref
-    skills: useRef(null)      // Add missing ref
+    projects: useRef(null),
+    skills: useRef(null),
+    hobbies: useRef(null)
   };
 
   const scrollToSection = (sectionId) => {
@@ -64,6 +66,9 @@ const App = () => {
           </div>
           <div ref={sectionRefs.skills} className="bg-white dark:bg-gray-800 dark:text-white rounded-xl shadow-sm p-8">
             <Skills skills={resume.skills} languages={resume.languages} />
+          </div>
+          <div ref={sectionRefs.hobbies} className="bg-white dark:bg-gray-800 dark:text-white rounded-xl shadow-sm p-8">
+            <Hobbies hobbies={resume.hobbies} />
           </div>
         </div>
       </main>
