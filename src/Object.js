@@ -66,7 +66,9 @@ const resume = {
         details: [
           "Developed cloud-native storage solution with Spring Boot/Vue 3",
           "Engineered modern authentication protocols with token validation"
-        ]
+        ],
+        link:'https://github.com/Yibo391/cloud-disk?tab=readme-ov-file'
+
       }
     ],
     experience: [
