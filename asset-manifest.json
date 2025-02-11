@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.8df7ec32.css",
-    "main.js": "/static/js/main.bcc87271.js",
+    "main.js": "/static/js/main.f35f1a15.js",
     "static/media/ukp_logo.png": "/static/media/ukp_logo.44758f867f0f74ceb001.png",
     "index.html": "/index.html",
     "main.8df7ec32.css.map": "/static/css/main.8df7ec32.css.map",
-    "main.bcc87271.js.map": "/static/js/main.bcc87271.js.map"
+    "main.f35f1a15.js.map": "/static/js/main.f35f1a15.js.map"
   },
   "entrypoints": [
     "static/css/main.8df7ec32.css",
-    "static/js/main.bcc87271.js"
+    "static/js/main.f35f1a15.js"
   ]
 }
