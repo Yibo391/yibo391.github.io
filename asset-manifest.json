@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a13ba5c2.css",
+    "main.js": "/static/js/main.5a64b581.js",
+    "static/media/ukp_logo.png": "/static/media/ukp_logo.44758f867f0f74ceb001.png",
+    "static/media/Fraunhofer_SIT_Logo.svg.png": "/static/media/Fraunhofer_SIT_Logo.svg.a0c7c7a63e98c9a1405f.png",
+    "index.html": "/index.html",
+    "main.a13ba5c2.css.map": "/static/css/main.a13ba5c2.css.map",
+    "main.5a64b581.js.map": "/static/js/main.5a64b581.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a13ba5c2.css",
+    "static/js/main.5a64b581.js"
+  ]
+}
