@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { useTheme } from './context/ThemeContext';
 import Header from './components/header/Header';
 import Education from './components/education/Education';
@@ -53,7 +53,7 @@ const App = () => {
 
         <div className="container mx-auto max-w-4xl space-y-16">
           <div ref={sectionRefs.profile} className="bg-white dark:bg-gray-800 dark:text-white rounded-xl shadow-sm p-8">
-            <Header name={resume.name} contact={resume.contact} />
+            <Header name={resume.name} role={resume.role} summary={resume.summary} mark={resume.mark} contact={resume.contact} />
           </div>
           <div ref={sectionRefs.education} className="bg-white dark:bg-gray-800 dark:text-white rounded-xl shadow-sm p-8">
             <Education education={resume.education} />

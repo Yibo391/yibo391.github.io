@@ -1,14 +1,18 @@
 import TULogo from './imgs/tu darmstadt.png'
 import LNULogo from './imgs/LNU.png'
+import personalMark from './imgs/yw-mark.svg'
 
 const resume = {
     name: "Yibo Wang",
+    role: "Software & Machine Learning Engineer",
+    mark: personalMark,
     contact: {
-      location: "Frankfurt, Germany",
-      phone: "017685939823",
+      location: "Germany",
       email: "wyibo00@outlook.com",
+      linkedin: "https://www.linkedin.com/in/yibo-w-b1114922b/",
+      github: "https://github.com/Yibo391"
     },
-    summary: "Computer Science master's student at TU Darmstadt, specializing in Natural Language Processing and Machine Learning. Experienced in full-stack development with a strong foundation in AI/ML technologies. Passionate about creating innovative solutions and contributing to cutting-edge research in NLP. Proven track record of collaborative project success and technical leadership.",
+    summary: "Master’s student in Computer Science at Technische Universität Darmstadt and Working Student at Fraunhofer SIT. I build reliable, scalable software and apply machine-learning techniques to practical problems, with experience across full-stack web development, AI systems, and collaborative research projects.",
     education: [
       {
         institution: "Technische Universität Darmstadt",
@@ -41,23 +45,23 @@ const resume = {
     ],
     projects: [
       {
-        title: "AI Editor | Academic Research Initiative",
+        title: "LiveCoWrite | Real-Time Collaborative Writing Platform",
         icon: "🤖",  // Add AI icon
         link: "https://livecowrite.ukp.informatik.tu-darmstadt.de/",  // Verify this link is correct
         details: [
-          "Architected real-time collaborative editing platform with React/TypeScript",
-          "Established RESTful API communication layer for seamless data flow",
-          "Deployed production-grade infrastructure with Nginx/systemd"
+          "Built real-time collaborative editing workflows with React and TypeScript",
+          "Designed a RESTful API layer to support dependable client–server data flow",
+          "Deployed and maintained the application infrastructure with Nginx and systemd"
         ]
       },
       {
-        title: "Smart Chat Bot | Full-Stack Development",
+        title: "Smart Chat Bot | Local LLM Full-Stack Application",
         icon: "💬", 
         link:"https://github.com/Yibo391/SmartChatBot?tab=readme-ov-file",
         details: [
-          "Engineered full-stack conversational interface with React.js/Node.js",
-          "Customized local LLM integration using Ollama framework",
-          "Structured MySQL database architecture for dynamic content recording"
+          "Built a conversational web application with React and Node.js",
+          "Integrated a locally deployed DeepSeek-R1 model through Ollama",
+          "Designed a MySQL data model for conversation and content records"
         ]
       },
       {
@@ -73,14 +77,33 @@ const resume = {
     ],
     experience: [
       {
-        title: "Internship",
+        title: "Working Student",
+        company: "Fraunhofer Institute for Secure Information Technology SIT",
+        period: "May 2025 – Present",
+        location: "Darmstadt, Germany",
+        details: [
+          "Contributing to applied research and software development in a security-focused research environment",
+          "Collaborating with interdisciplinary teams to develop dependable technical solutions"
+        ]
+      },
+      {
+        title: "Independent Contractor",
+        company: "Outlier",
+        period: "February 2025 – April 2025",
+        location: "Remote",
+        details: [
+          "Trained and evaluated AI models for code-generation tasks",
+          "Applied Java and Python expertise to assess technical accuracy and instruction following"
+        ]
+      },
+      {
+        title: "Software Developer Intern",
         company: "Lakritsoft AB",
-        period: "07/2021 - 11/2021",
+        period: "February 2021 – August 2021",
         location: "Gothenburg, Sweden",
         details: [
-          "Built a single-page application to display a restaurant's menu",
-          "Implemented responsive design patterns maintaining visual coherence",
-          "Deployed the application to GitHub Page"
+          "Developed responsive client websites with HTML, CSS, JavaScript, and Bootstrap",
+          "Improved usability and accessibility through responsive design patterns"
         ]
       }
     ],
@@ -92,7 +115,7 @@ const resume = {
       other: ["Responsive Design", "CI/CD", "RESTful API", "AWS EC2", "AWS Lambda", "AWS S3"],
       toolsAndTechnologies: ["Git", "Nginx", "Postman", "scikit-learn", "Jira", "Trello"]
     },
-    languages: ["Chinese", "English"],
+    languages: ["Chinese (Native)", "English (Professional working proficiency)"],
     hobbies: [
       {
         category: "Sports",
