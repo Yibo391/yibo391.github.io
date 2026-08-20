@@ -79,6 +79,8 @@ const resume = {
       {
         title: "Working Student",
         company: "Fraunhofer Institute for Secure Information Technology SIT",
+        logo: "Fh",
+        logoStyle: "bg-emerald-600 text-white",
         period: "May 2025 – Present",
         location: "Darmstadt, Germany",
         details: [
@@ -89,6 +91,8 @@ const resume = {
       {
         title: "Independent Contractor",
         company: "Outlier",
+        logo: "O",
+        logoStyle: "bg-violet-600 text-white",
         period: "February 2025 – April 2025",
         location: "Remote",
         details: [
@@ -99,6 +103,8 @@ const resume = {
       {
         title: "Software Developer Intern",
         company: "Lakritsoft AB",
+        logo: "L",
+        logoStyle: "bg-amber-400 text-slate-950",
         period: "February 2021 – August 2021",
         location: "Gothenburg, Sweden",
         details: [

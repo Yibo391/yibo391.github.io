@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Remove any conflicting styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f8fafc;
+  font-family: 'Manrope', sans-serif;
+  background: #fffaf7;
   color: #334155;
   @apply text-gray-900 dark:text-white;
 }
@@ -20,9 +19,56 @@ code {
 }
 
 h1, h2, h3, h4 {
-  color: #1e293b;
   @apply text-gray-900 dark:text-white;
 }
+
+::selection {
+  background: #bae6fd;
+  color: #0f172a;
+}
+
+.portfolio-card {
+  position: relative;
+  border: 1px solid rgb(255 255 255 / 0.9);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 0.9);
+  box-shadow: 0 18px 55px rgb(15 23 42 / 0.09);
+}
+
+.dark .portfolio-card {
+  border-color: rgb(51 65 85 / 0.8);
+  background: rgb(15 23 42 / 0.82);
+  box-shadow: 0 16px 45px rgb(0 0 0 / 0.18);
+}
+
+.section-kicker {
+  margin: 0 0 0.25rem;
+  color: #0284c7;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.73rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.hero-card { background: linear-gradient(135deg, rgb(255 255 255 / .96), rgb(239 246 255 / .9) 54%, rgb(250 232 255 / .82)); }
+.experience-card { box-shadow: inset 4px 0 0 #38bdf8, 0 18px 55px rgb(15 23 42 / 0.09); }
+.education-card { box-shadow: inset 4px 0 0 #a855f7, 0 18px 55px rgb(15 23 42 / 0.09); }
+.projects-card { box-shadow: inset 4px 0 0 #fb7185, 0 18px 55px rgb(15 23 42 / 0.09); }
+.skills-card { box-shadow: inset 4px 0 0 #f59e0b, 0 18px 55px rgb(15 23 42 / 0.09); }
+.hobbies-card { box-shadow: inset 4px 0 0 #10b981, 0 18px 55px rgb(15 23 42 / 0.09); }
+
+.dark .hero-card { background: linear-gradient(135deg, rgb(15 23 42 / .98), rgb(30 41 59 / .96) 54%, rgb(88 28 135 / .28)); }
+
+.nav-scroll { scrollbar-width: none; }
+.nav-scroll::-webkit-scrollbar { display: none; }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
